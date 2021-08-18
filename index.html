@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,68 +10,70 @@
     <title>Document</title>
 </head>
 
-    <body onload='populate()'>
+<body onload='populate()'>
 
     <div class='container'>
         <div class='disp' id='bookForm'>
             <div class='formcontainer'>
-            <h3 class='title'>New Book Form</h3>
-            <form id='libform'>
-            <div class='row'>
-                <label for='title'>Title</label>
-                <input type='text' name='title' id='title' autocomplete='off' required>
+                <h3 class='title'>New Book Form</h3>
+                <form id='libform'>
+                    <div class='row'>
+                        <label for='title'>Title</label>
+                        <input type='text' name='title' id='title' autocomplete='off' required>
+                    </div>
+                    <br>
+                    <div class='row'>
+                        <label for='author'>Author</label>
+                        <input type='text' name='author' id='author' autocomplete='off' required>
+                    </div>
+                    <br>
+                    <div class='row'>
+                        <label for='pages'># Pages</label>
+                        <input type='number' name='pages' id='pages' autocomplete='off' required>
+                    </div>
+                    <br>
+                    <div class='row'>
+                        <label for='status'>Status</label>
+                        <select name="status" id="status" required>
+                            <option value="Read">Read</option>
+                            <option value="Unread">Unread</option>
+                        </select>
+                        <!-- <input type='text' name='status' id='status' autocomplete='off' required> -->
+                    </div>
+                    <br>
+                    <br>
+                    <button id='submit' type='reset'>Reset</button>
+                    <br>
+                    <br>
+                    <button id='submit' type='submit'>Submit</button>
+                </form>
             </div>
-            <br>
-            <div class='row'>
-                <label for='author'>Author</label>
-                <input type='text' name='author' id='author' autocomplete='off' required>
-            </div>
-            <br>
-            <div class='row'>
-                <label for='pages'># Pages</label>
-                <input type='number' name='pages' id='pages' autocomplete='off' required>
-            </div>
-            <br>
-            <div class='row'>
-                <label for='status'>Status</label>
-                <select name="status" id="status" required>
-                <option value="Read">Read</option>
-                <option value="Unread">Unread</option>
-                </select>
-                <!-- <input type='text' name='status' id='status' autocomplete='off' required> -->
-            </div>
-            <br>
-            <br>
-            <button id='submit' type='reset'>Reset</button>
-            <br>
-            <br>
-            <button id='submit' type='submit'>Submit</button>
-            </form>
-        </div>
         </div>
         <div class='disp'>
             <table id='table'>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th># Pages</th>
-                <th>Status</th>
-                <th>Change Status</th>
-                <th>Remove</th>
-            </tr>
-            <tr>
-                <td class='hold'></td>
-                <td class='hold'></td>
-                <td class='hold'></td>
-                <td class='hold'></td>
-                <td class='hold'></td>
-                <td class='hold'></td>
-            </tr>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th># Pages</th>
+                    <th>Status</th>
+                    <th>Change Status</th>
+                    <th>Remove</th>
+                </tr>
+                <!-- dont need this code 8/17 -->
+                <!-- might need it when I work on css -->
+                <!-- <tr>
+                    <td class='hold'></td>
+                    <td class='hold'></td>
+                    <td class='hold'></td>
+                    <td class='hold'></td>
+                    <td class='hold'></td>
+                    <td class='hold'></td>
+                </tr> -->
             </table>
         </div>
-        </div>
-    
-    </body>
+    </div>
+
+</body>
 
 
 </html>
