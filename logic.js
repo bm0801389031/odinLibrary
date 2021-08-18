@@ -118,10 +118,6 @@ function remove(event) {
     console.log(tr);
     // from td.parentNode removesChild node td
     // being the table row entirely thats removed
-    //
-    // personally changed the code tr is already declared and
-    // can be used below
-    //td.parentNode.removeChild(td);
     tr.removeChild(td);
 
 }
@@ -143,10 +139,12 @@ function change(event) {
 // conditionals make sure that the title at the current object in
 // the loop is equal to the table row element wich was set in prev code
 // therefore only changing the clicked on table row 
+// changes the status on the object in array
         if (myLibrary[i].title == el && myLibrary[i].status == "Read") {
             myLibrary[i].status = "Unread";
 // assign the cell index 3 innerHTML to the status at the current
 // obj.status
+// changes the status on the table 
             cell[3].innerHTML = `${myLibrary[i].status}`;
         }else {
 // this does the exact same thing as the previuse line of code
