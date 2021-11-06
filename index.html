@@ -18,9 +18,9 @@
             <span class="close">&times;</span>
             <h5>New Book</h5>
             <div id='textInput'> 
-                <p><input type='text' id='title' name='title' placeholder='Title'></p>
-                <p><input type='text' id='author' name='author' placeholder='Author'></p>
-                <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+                <p><input type='text' id='title' name='title' placeholder='Title' required></p>
+                <p><input type='text' id='author' name='author' placeholder='Author' required></p>
+                <p><input type='number' id='pages' name='pages' placeholder='Pages' max="1000" required></p>
             </div>
             <div id='checkBox'>
                 <p><label >Read: </label><input type='checkbox' id='read' name='read'></p>
