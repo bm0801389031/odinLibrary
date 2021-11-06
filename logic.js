@@ -38,15 +38,20 @@ let newBook
 
 
 
+
 function addBookToLibrary() {
+    let title = document.getElementById(title)
+    if(title.required && author.required && pages.required == true){ 
     event.preventDefault();
     popUpForm.style.display = 'none';
 
     newBook = new Book(title, author, pages,read); 
     myLibrary.push(newBook); 
+    }
     setData();  //saves updated array in local storage
     render(); 
     form.reset();
+    
 }
 
 
